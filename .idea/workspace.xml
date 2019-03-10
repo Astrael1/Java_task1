@@ -22,25 +22,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="13" />
-          <entry key="java" value="7" />
+          <entry key="class" value="15" />
+          <entry key="java" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="13" />
-          <entry key="JAVA" value="7" />
+          <entry key="CLASS" value="15" />
+          <entry key="JAVA" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
-          <entry key="java" value="3686" />
+          <entry key="java" value="5817" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3686" />
+          <entry key="JAVA" value="5817" />
           <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
@@ -51,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/saleCentre/CashRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="105" selection-start-line="105" selection-end-line="105" />
+            <state relative-caret-position="517">
+              <caret line="115" column="34" lean-forward="true" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#CashRegister#1;class#CashRegister#0" />
@@ -62,14 +62,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/ProductService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/saleCentre/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            <state relative-caret-position="136">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/saleCentre/Demo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#282#283#0" expanded="true" />
-                <element signature="e#328#329#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,20 +85,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/cashRegisterTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="187">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="13" column="127" selection-start-line="13" selection-start-column="127" selection-end-line="13" selection-end-column="127" />
             </state>
           </provider>
         </entry>
@@ -108,6 +106,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>item</find>
+      <find>produ</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/saleCentre/Program.java" />
         <option value="$PROJECT_DIR$/src/main/java/saleCentre/cashRegister.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/saleCentre/ProgramEntity.java" />
@@ -125,8 +123,10 @@
         <option value="$PROJECT_DIR$/src/main/java/service/ProductService.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/ProductEntity.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/mockitoTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/cashRegisterTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/saleCentre/Program.java" />
+        <option value="$PROJECT_DIR$/src/main/java/saleCentre/Demo.java" />
         <option value="$PROJECT_DIR$/src/main/java/saleCentre/CashRegister.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/cashRegisterTests.java" />
       </list>
     </option>
   </component>
@@ -159,9 +159,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="383" />
-    <option name="y" value="-12" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="486" />
+    <option name="y" value="-18" />
     <option name="width" value="683" />
     <option name="height" value="728" />
   </component>
@@ -171,7 +171,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,39 +202,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IMPAQ_Java_task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java_task1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IMPAQ_Java_task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java_task1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IMPAQ_Java_task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java_task1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="saleCentre" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552216852948" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552228463456" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -255,7 +234,50 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.cashRegisterTests.GivenListOfProducts_WithInvalidBars_ThenTicketIsPrinted">
+  <component name="RunManager" selected="JUnit.cashRegisterTests">
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="saleCentre.Program" />
+      <module name="Java_task1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="saleCentre.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cashRegisterTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java_task1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.cashRegisterTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cashRegisterTests.GivenEmptyString_ThenCommunicateIsPrinted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java_task1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.cashRegisterTests" />
+      <option name="METHOD_NAME" value="GivenEmptyString_ThenCommunicateIsPrinted" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="cashRegisterTests.GivenListOfProductsAndExit_ThenTicketIsPrinted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java_task1" />
       <extension name="coverage">
@@ -267,22 +289,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.cashRegisterTests" />
       <option name="METHOD_NAME" value="GivenListOfProductsAndExit_ThenTicketIsPrinted" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="cashRegisterTests.GivenListOfProducts_WithInvalidBars_ThenTicketIsPrinted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_task1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.cashRegisterTests" />
-      <option name="METHOD_NAME" value="GivenListOfProducts_WithInvalidBars_ThenTicketIsPrinted" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -304,50 +310,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mockitoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_task1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.mockitoTests" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="mockitoTests.responseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_task1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.mockitoTests" />
-      <option name="METHOD_NAME" value="responseTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.mockitoTests" />
-      <item itemvalue="JUnit.mockitoTests.responseTest" />
-      <item itemvalue="JUnit.cashRegisterTests.GivenProduct_ThenOutputIsPrinted" />
       <item itemvalue="JUnit.cashRegisterTests.GivenListOfProductsAndExit_ThenTicketIsPrinted" />
-      <item itemvalue="JUnit.cashRegisterTests.GivenListOfProducts_WithInvalidBars_ThenTicketIsPrinted" />
+      <item itemvalue="Application.Program" />
+      <item itemvalue="JUnit.cashRegisterTests" />
+      <item itemvalue="JUnit.cashRegisterTests.GivenEmptyString_ThenCommunicateIsPrinted" />
+      <item itemvalue="JUnit.cashRegisterTests.GivenProduct_ThenOutputIsPrinted" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.cashRegisterTests.GivenListOfProducts_WithInvalidBars_ThenTicketIsPrinted" />
-        <item itemvalue="JUnit.cashRegisterTests.GivenListOfProductsAndExit_ThenTicketIsPrinted" />
+        <item itemvalue="JUnit.cashRegisterTests" />
         <item itemvalue="JUnit.cashRegisterTests.GivenProduct_ThenOutputIsPrinted" />
-        <item itemvalue="JUnit.mockitoTests.responseTest" />
-        <item itemvalue="JUnit.mockitoTests" />
+        <item itemvalue="JUnit.cashRegisterTests.GivenEmptyString_ThenCommunicateIsPrinted" />
+        <item itemvalue="Application.Program" />
+        <item itemvalue="JUnit.cashRegisterTests.GivenListOfProductsAndExit_ThenTicketIsPrinted" />
       </list>
     </recent_temporary>
   </component>
@@ -362,44 +338,53 @@
       <option name="presentableId" value="Default" />
       <updated>1552155225564</updated>
       <workItem from="1552155231339" duration="16515000" />
-      <workItem from="1552212939711" duration="3756000" />
+      <workItem from="1552212939711" duration="13564000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="cashRegisterTests_GivenListOfProductsAndExit_ThenTicketIsPrinted - 2019.03.10 at 12h 01m 16s.xml">
-      <configuration name="cashRegisterTests.GivenListOfProductsAndExit_ThenTicketIsPrinted" configurationId="JUnit" />
+    <history-entry file="cashRegisterTests - 2019.03.10 at 14h 24m 49s.xml">
+      <configuration name="cashRegisterTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="cashRegisterTests_GivenListOfProductsAndExit_ThenTicketIsPrinted - 2019.03.10 at 12h 02m 19s.xml">
-      <configuration name="cashRegisterTests.GivenListOfProductsAndExit_ThenTicketIsPrinted" configurationId="JUnit" />
+    <history-entry file="cashRegisterTests_GivenEmptyString_ThenCommunicateIsPrinted - 2019.03.10 at 15h 25m 01s.xml">
+      <configuration name="cashRegisterTests.GivenEmptyString_ThenCommunicateIsPrinted" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="cashRegisterTests_GivenListOfProductsAndExit_ThenTicketIsPrinted - 2019.03.10 at 12h 02m 44s.xml">
-      <configuration name="cashRegisterTests.GivenListOfProductsAndExit_ThenTicketIsPrinted" configurationId="JUnit" />
+    <history-entry file="cashRegisterTests_GivenEmptyString_ThenCommunicateIsPrinted - 2019.03.10 at 15h 25m 54s.xml">
+      <configuration name="cashRegisterTests.GivenEmptyString_ThenCommunicateIsPrinted" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="cashRegisterTests_GivenListOfProductsAndExit_ThenTicketIsPrinted - 2019.03.10 at 12h 03m 12s.xml">
-      <configuration name="cashRegisterTests.GivenListOfProductsAndExit_ThenTicketIsPrinted" configurationId="JUnit" />
+    <history-entry file="cashRegisterTests_GivenEmptyString_ThenCommunicateIsPrinted - 2019.03.10 at 15h 26m 01s.xml">
+      <configuration name="cashRegisterTests.GivenEmptyString_ThenCommunicateIsPrinted" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="cashRegisterTests_GivenListOfProductsAndExit_ThenTicketIsPrinted - 2019.03.10 at 12h 05m 48s.xml">
-      <configuration name="cashRegisterTests.GivenListOfProductsAndExit_ThenTicketIsPrinted" configurationId="JUnit" />
+    <history-entry file="cashRegisterTests_GivenEmptyString_ThenCommunicateIsPrinted - 2019.03.10 at 15h 26m 16s.xml">
+      <configuration name="cashRegisterTests.GivenEmptyString_ThenCommunicateIsPrinted" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="cashRegisterTests_GivenListOfProductsAndExit_ThenTicketIsPrinted - 2019.03.10 at 12h 05m 56s.xml">
-      <configuration name="cashRegisterTests.GivenListOfProductsAndExit_ThenTicketIsPrinted" configurationId="JUnit" />
+    <history-entry file="cashRegisterTests_GivenEmptyString_ThenCommunicateIsPrinted - 2019.03.10 at 15h 32m 55s.xml">
+      <configuration name="cashRegisterTests.GivenEmptyString_ThenCommunicateIsPrinted" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="cashRegisterTests_GivenListOfProductsAndExit_ThenTicketIsPrinted - 2019.03.10 at 12h 13m 48s.xml">
-      <configuration name="cashRegisterTests.GivenListOfProductsAndExit_ThenTicketIsPrinted" configurationId="JUnit" />
+    <history-entry file="cashRegisterTests_GivenProduct_ThenOutputIsPrinted - 2019.03.10 at 15h 33m 00s.xml">
+      <configuration name="cashRegisterTests.GivenProduct_ThenOutputIsPrinted" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="cashRegisterTests_GivenListOfProductsAndExit_ThenTicketIsPrinted - 2019.03.10 at 12h 14m 23s.xml">
-      <configuration name="cashRegisterTests.GivenListOfProductsAndExit_ThenTicketIsPrinted" configurationId="JUnit" />
+    <history-entry file="cashRegisterTests - 2019.03.10 at 15h 33m 09s.xml">
+      <configuration name="cashRegisterTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="cashRegisterTests_GivenListOfProductsAndExit_ThenTicketIsPrinted - 2019.03.10 at 12h 14m 51s.xml">
-      <configuration name="cashRegisterTests.GivenListOfProductsAndExit_ThenTicketIsPrinted" configurationId="JUnit" />
+    <history-entry file="cashRegisterTests - 2019.03.10 at 15h 34m 12s.xml">
+      <configuration name="cashRegisterTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="cashRegisterTests_GivenListOfProducts_WithInvalidBars_ThenTicketIsPrinted - 2019.03.10 at 12h 15m 52s.xml">
-      <configuration name="cashRegisterTests.GivenListOfProducts_WithInvalidBars_ThenTicketIsPrinted" configurationId="JUnit" />
+    <history-entry file="cashRegisterTests - 2019.03.10 at 15h 34m 28s.xml">
+      <configuration name="cashRegisterTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20271000" />
+    <option name="totallyTimeSpent" value="30079000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -410,7 +395,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4987775" weight="0.52969503" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4987775" weight="0.5295008" />
       <window_info id="Structure" order="6" sideWeight="0.5012225" side_tool="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3295082" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.3295082" />
@@ -418,12 +403,12 @@
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.33442622" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.33442622" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32786885" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.3295082" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Database" order="2" />
@@ -434,36 +419,6 @@
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4987775" weight="0.52969503" />
-      <window_info id="Structure" order="6" sideWeight="0.5012225" side_tool="true" weight="0.24962178" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3295082" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.33606556" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32786885" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Database" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" weight="0.32980332" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -471,26 +426,7 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/saleCentre/CashRegister.java</url>
-          <line>83</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/saleCentre/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -538,13 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -552,24 +481,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="59" column="73" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="13" column="127" selection-start-line="13" selection-start-column="127" selection-end-line="13" selection-end-column="127" />
         </state>
       </provider>
     </entry>
@@ -585,10 +500,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="127" selection-start-line="13" selection-start-column="127" selection-end-line="13" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="53" column="173" selection-start-line="53" selection-start-column="173" selection-end-line="53" selection-end-column="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/saleCentre/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/saleCentre/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/saleCentre/CashRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="517">
+          <caret line="115" column="34" lean-forward="true" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CashRegister#1;class#CashRegister#0" />
@@ -598,8 +551,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/cashRegisterTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="187">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

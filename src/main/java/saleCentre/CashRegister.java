@@ -46,12 +46,27 @@ public class CashRegister
         productService = new ProductService(productDao);
     }
 
-    private void addProduct(String code)
+
+    private boolean addProduct(String code)
     {
-        ProductEntity result = new ProductEntity(code, "Product with code: " + code, code.hashCode());
-        Mockito.when(productDao.findById(code)).thenReturn(result);
-        ProductEntity requestedProduct = productService.findById(code);
-        listOfProducts.add(new Pair<>(requestedProduct.getName(), requestedProduct.getPrice()));
+        ProductEntity requestedProduct = getProductFromDatabase(code);
+        if(requestedProduct != null)
+        {
+            listOfProducts.add(new Pair<>(requestedProduct.getName(), requestedProduct.getPrice()));
+            return true;
+        }
+        return false;
+    }
+
+    private ProductEntity getProductFromDatabase(String code)
+    {
+        if(!code.equals("null"))
+        {
+            ProductEntity result = new ProductEntity(code, "Product with code: " + code, code.hashCode());
+            Mockito.when(productDao.findById(code)).thenReturn(result);
+            return productService.findById(code);
+        }
+        return null;
     }
 
     private void displayLastProduct() throws IOException {
@@ -62,39 +77,49 @@ public class CashRegister
         lcdDisplay.flush();
     }
 
+    private void displayOnLCD(String message) throws IOException {
+        lcdDisplay.write(message);
+        lcdDisplay.flush();
+    }
+
+    private void printOnPrinter(String message) throws IOException {
+        printer.write(message);
+        printer.flush();
+    }
+
     private void printTicket() throws IOException {
         Integer totalPrice = 0;
-        for ( Pair<String, Integer> item: listOfProducts)
+        for ( Pair<String, Integer> product: listOfProducts)
         {
-            String productName = item.getKey();
-            Integer price = item.getValue();
+            String productName = product.getKey();
+            Integer price = product.getValue();
             totalPrice += price;
-            printer.write(productName + " " + price + "\n");
-            printer.flush();
+            printOnPrinter(productName + " " + price + "\n");
         }
 
-        printer.write(totalPrice.toString());
-        printer.flush();
+        listOfProducts.clear();
 
-        lcdDisplay.write(totalPrice.toString());
-        lcdDisplay.flush();
+        printOnPrinter(totalPrice.toString() + "\n");
+        displayOnLCD(totalPrice.toString() + "\n");
     }
 
     public void readAndProcessCode() throws IOException {
         String code = barScanner.nextLine();
         if(code.equals("") )
         {
-            lcdDisplay.write("Invalid bar code\n");
-            lcdDisplay.flush();
+            displayOnLCD("Invalid bar code\n");
         }
         else if (code.equals("exit") )
         {
             printTicket();
         }
+        else if (addProduct(code))
+        {
+            displayLastProduct();
+        }
         else
         {
-            addProduct(code);
-            displayLastProduct();
+            displayOnLCD("Product not found\n");
         }
     }
 
