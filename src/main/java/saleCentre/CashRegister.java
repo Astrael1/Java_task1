@@ -42,7 +42,7 @@ public class CashRegister
         this.barScanner = new Scanner(System.in);
         this.lcdDisplay = new OutputStreamWriter(System.out);
         this.printer = new OutputStreamWriter(System.out);
-        listOfProducts = new LinkedList<Pair<String, Integer>>();
+        listOfProducts = new LinkedList<>();
         productService = new ProductService(productDao);
     }
 
