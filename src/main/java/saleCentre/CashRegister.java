@@ -11,8 +11,6 @@ import java.util.Scanner;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import org.mockito.junit.MockitoJUnit;
-import org.mockito.junit.MockitoRule;
 import service.ProductService;
 
 public class CashRegister
@@ -25,7 +23,7 @@ public class CashRegister
     private ProductService productService;
 
 
-    private List< Pair<String, Integer> > listOfItems;
+    private List< Pair<String, Integer> > listOfProducts;
 
 
     public CashRegister(InputStream barReaderStream, OutputStream lcdDisplayStream, OutputStream printerStream )
@@ -33,7 +31,7 @@ public class CashRegister
         this.barScanner = new Scanner(barReaderStream);
         this.lcdDisplay = new OutputStreamWriter(lcdDisplayStream);
         this.printer = new OutputStreamWriter(printerStream);
-        listOfItems = new LinkedList<Pair<String, Integer>>();
+        listOfProducts = new LinkedList<>();
 
         MockitoAnnotations.initMocks(this);
         productService = new ProductService(productDao);
@@ -44,38 +42,41 @@ public class CashRegister
         this.barScanner = new Scanner(System.in);
         this.lcdDisplay = new OutputStreamWriter(System.out);
         this.printer = new OutputStreamWriter(System.out);
-        listOfItems = new LinkedList<Pair<String, Integer>>();
+        listOfProducts = new LinkedList<Pair<String, Integer>>();
         productService = new ProductService(productDao);
     }
 
-    private void addItem(String code)
+    private void addProduct(String code)
     {
         ProductEntity result = new ProductEntity(code, "Product with code: " + code, code.hashCode());
         Mockito.when(productDao.findById(code)).thenReturn(result);
         ProductEntity requestedProduct = productService.findById(code);
-        listOfItems.add(new Pair<>(requestedProduct.getName(), requestedProduct.getPrice()));
+        listOfProducts.add(new Pair<>(requestedProduct.getName(), requestedProduct.getPrice()));
     }
 
-    private void displayLastItem() throws IOException {
-        Pair<String, Integer> lastProduct = listOfItems.get(listOfItems.size() - 1);
+    private void displayLastProduct() throws IOException {
+        Pair<String, Integer> lastProduct = listOfProducts.get(listOfProducts.size() - 1);
         String productName = lastProduct.getKey();
         Integer price = lastProduct.getValue();
-        lcdDisplay.write(productName + " " + price);
+        lcdDisplay.write(productName + " " + price + "\n");
         lcdDisplay.flush();
     }
 
-    private void printTicketAndFinish() throws IOException {
+    private void printTicket() throws IOException {
         Integer totalPrice = 0;
-        for ( Pair<String, Integer> item: listOfItems )
+        for ( Pair<String, Integer> item: listOfProducts)
         {
             String productName = item.getKey();
             Integer price = item.getValue();
             totalPrice += price;
-            printer.write(productName + " " + price);
+            printer.write(productName + " " + price + "\n");
             printer.flush();
         }
 
-        lcdDisplay.write(totalPrice);
+        printer.write(totalPrice.toString());
+        printer.flush();
+
+        lcdDisplay.write(totalPrice.toString());
         lcdDisplay.flush();
     }
 
@@ -83,17 +84,24 @@ public class CashRegister
         String code = barScanner.nextLine();
         if(code.equals("") )
         {
-            lcdDisplay.write("Product not found");
+            lcdDisplay.write("Invalid bar code\n");
             lcdDisplay.flush();
         }
         else if (code.equals("exit") )
         {
-            printTicketAndFinish();
+            printTicket();
         }
         else
         {
-            addItem(code);
-            displayLastItem();
+            addProduct(code);
+            displayLastProduct();
+        }
+    }
+
+    public void processListOfProducts() throws IOException {
+        while (barScanner.hasNext())
+        {
+            readAndProcessCode();
         }
     }
 
